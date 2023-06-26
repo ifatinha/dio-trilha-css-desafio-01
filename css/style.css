@@ -144,13 +144,13 @@ section ul li {
     background           : url("../images/woman-code.png") no-repeat center;
     background-attachment: fixed;
     background-size      : cover;
-    padding              : 200px;
     text-align           : left;
 }
 
 @media screen and (min-width: 1024px) {
     #transforme {
-        height: 560px;
+        height : 560px;
+        padding: 200px;
     }
 }
 
@@ -164,4 +164,23 @@ section ul li {
 
 #evolution img {
     margin: 50px 0 32px;
+}
+
+/* header */
+.footer {
+    padding   : 60px 2%;
+    text-align: center;
+}
+
+.footer img {
+    margin: 0 auto;
+}
+
+.footer a {
+    display: block;
+}
+
+.footer a span {
+    color      : var(--blue-dark);
+    font-weight: 700;
 }
