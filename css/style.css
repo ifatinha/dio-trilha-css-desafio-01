@@ -1,0 +1,106 @@
+@import "minireset.css";
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap');
+
+/* Generics Styles */
+
+:root {
+    --black        : #000000;
+    --white        : #ffffff;
+    --blue         : #31a8dd;
+    --blue-dark    : #33a8db;
+    --border-bottom: 1px solid #33A8DB80;
+}
+
+body {
+    background-color: var(--black);
+    font-family     : 'Raleway', sans-serif;
+}
+
+.margin-auto {
+    margin: 0 auto;
+}
+
+.title {
+    margin        : 20px 0;
+    text-transform: uppercase;
+}
+
+.btn-default {
+    border          : none;
+    border-color    : var(--blue-dark);
+    border-style    : solid;
+    background-color: transparent;
+    transition      : .3s ease-in-out;
+}
+
+.btn-default:hover {
+    opacity: .8;
+}
+
+/* header CSS */
+
+.header {
+    background-image : linear-gradient(rgba(0, 0, 0, .6), rgba(49, 168, 221, .2), rgba(0, 0, 0, .6)), url("../images/banner.png");
+    background-size  : cover;
+    background-repeat: no-repeat;
+    border-bottom    : var(--border-bottom);
+    padding-top      : 60px;
+    text-align       : center;
+}
+
+@media screen and (min-width: 1024px) {
+    .header {
+        min-height: 80vh;
+    }
+}
+
+.header-logo {
+    background-color: rgba(0, 0, 0, .2);
+    border-radius   : 50%;
+    height          : 260px;
+    padding         : 16px;
+    width           : 260px;
+}
+
+.header-logo img {
+    height    : 100%;
+    object-fit: contain;
+    width     : 100%;
+}
+
+.header-texts {
+    max-width    : 600px;
+    margin-bottom: 60px;
+    text-align   : center;
+    width        : 100%;
+}
+
+.header-texts h1 {
+    background             : -webkit-linear-gradient(#33A8DB, #1472B7);
+    color                  : transparent;
+    font-size              : 2.5rem;
+    font-weight            : 900;
+    background-clip        : text;
+    -webkit-background-clip: text;
+}
+
+.header-texts p {
+    color     : var(--white);
+    font-size : 1.25rem;
+    margin    : 16px 0 24px;
+    text-align: center;
+}
+
+.btn-square {
+    border-width  : 1.5px;
+    color         : var(--blue);
+    cursor        : pointer;
+    display       : inline-block;
+    font-size     : 1rem;
+    font-weight   : 700;
+    letter-spacing: 4px;
+    padding       : 16px 32px;
+    text-transform: uppercase;
+}
+
+/* main */
