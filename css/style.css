@@ -5,6 +5,7 @@
 
 :root {
     --black        : #000000;
+    --black-gray   : #252525;
     --white        : #ffffff;
     --blue         : #31a8dd;
     --blue-dark    : #33a8db;
@@ -13,11 +14,19 @@
 
 body {
     background-color: var(--black);
+    color           : var(--white);
     font-family     : 'Raleway', sans-serif;
 }
 
 .margin-auto {
     margin: 0 auto;
+}
+
+.container {
+    max-width    : 800px;
+    margin-bottom: 60px;
+    text-align   : center;
+    width        : 100%;
 }
 
 .title {
@@ -35,6 +44,13 @@ body {
 
 .btn-default:hover {
     opacity: .8;
+}
+
+.section-title {
+    color         : var(--blue-dark);
+    font-size     : 2rem;
+    font-weight   : 700;
+    letter-spacing: 4px;
 }
 
 /* header CSS */
@@ -68,14 +84,7 @@ body {
     width     : 100%;
 }
 
-.header-texts {
-    max-width    : 600px;
-    margin-bottom: 60px;
-    text-align   : center;
-    width        : 100%;
-}
-
-.header-texts h1 {
+.header h1 {
     background             : -webkit-linear-gradient(#33A8DB, #1472B7);
     color                  : transparent;
     font-size              : 2.5rem;
@@ -84,8 +93,7 @@ body {
     -webkit-background-clip: text;
 }
 
-.header-texts p {
-    color     : var(--white);
+.header p {
     font-size : 1.25rem;
     margin    : 16px 0 24px;
     text-align: center;
@@ -104,3 +112,56 @@ body {
 }
 
 /* main */
+.section {
+    border-bottom: var(--border-bottom);
+    padding      : 100px 2%;
+    text-align   : center;
+}
+
+.section p {
+    margin-bottom: 20px;
+}
+
+section ul li {
+    margin: 24px 0;
+}
+
+.btn-round {
+    background-color: var(--black-gray);
+    box-shadow      : inset var(--black) -5px 6px 8px 0;
+    border-radius   : 100px;
+    display         : inline-block;
+    max-width       : 500px;
+    padding         : 16px;
+    width           : 100%;
+}
+
+.btn-round span {
+    color: var(--blue);
+}
+
+#transforme {
+    background           : url("../images/woman-code.png") no-repeat center;
+    background-attachment: fixed;
+    background-size      : cover;
+    padding              : 200px;
+    text-align           : left;
+}
+
+@media screen and (min-width: 1024px) {
+    #transforme {
+        height: 560px;
+    }
+}
+
+#transforme h2 {
+    font-size     : 2.5rem;
+    font-weight   : 900;
+    max-width     : 250px;
+    text-transform: lowercase;
+    text-shadow   : 3px 2px var(--blue-dark);
+}
+
+#evolution img {
+    margin: 50px 0 32px;
+}
